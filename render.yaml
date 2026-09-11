@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: waymate-api
+    runtime: node
+    rootDir: bike/backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLIENT_ORIGIN
+        value: "*"

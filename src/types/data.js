@@ -1,0 +1,1217 @@
+// Pre-seeded authentic PVP Siddhartha Institute of Technology community mobility data
+// Reflecting realistic campus & PG short-distance routes and 9 connected demo users.
+
+export const CAMPUS_LOCATIONS = [
+  'PVP SIT Parking',
+  'Main Block / Admin',
+  'Central Library',
+  'Green Residency PG',
+  'Central PG',
+  'North Hostel Block',
+  'Lakeview Hostel',
+  'Student Housing Complex',
+  'Campus Food Street',
+  'Metro Station',
+  'Market'
+];
+
+export const DEMO_PASSWORD_FALLBACK_HASH = '5be4feecab3e2b1c2cfa5d2da71c4cc404e69b00ca4ec0e6a72a047b6df979c7'; // Waymate@2026
+
+export const INITIAL_USERS = [
+  {
+    id: 'user-demo-01',
+    generatedUserId: 'WM-1001',
+    username: 'arjun_mehta',
+    name: 'Arjun Mehta',
+    email: 'demo01@waymate.app',
+    phone: '9000000101',
+    collegeId: '23P81A0101',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Green Residency PG',
+    role: 'Provider + Passenger',
+    avatar: '/avatars/demo-user-01.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Trusted Member',
+    rating: 4.9,
+    reviewsCount: 7,
+    ridesCompleted: 24,
+    ridesShared: 14,
+    vehicle: 'Honda Activa 6G',
+    vehicleModel: 'Honda Activa 6G',
+    bikeNumber: 'AP 16 AB 2101',
+    bikeColour: 'Matte Black',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: '99% on-time',
+    mutualConnections: 18,
+    collegeDomain: 'waymate.app',
+    passwordHash: '6dfd75561b15a2b8c4ff1784592467420edceab36e37b9e13018e25ac83d627f', // Waymate@1001
+    walletBalance: 184,
+    primaryRoutes: ['PVP SIT Parking → Green Residency PG', 'PVP SIT Parking → Central PG']
+  },
+  {
+    id: 'user-demo-02',
+    generatedUserId: 'WM-1002',
+    username: 'priya_nair',
+    name: 'Priya Nair',
+    email: 'demo02@waymate.app',
+    phone: '9000000102',
+    collegeId: '23P81A0102',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Central PG',
+    role: 'Provider + Passenger',
+    avatar: '/avatars/demo-user-02.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Trusted Member',
+    rating: 4.8,
+    reviewsCount: 6,
+    ridesCompleted: 18,
+    ridesShared: 9,
+    vehicle: 'TVS Jupiter',
+    vehicleModel: 'TVS Jupiter',
+    bikeNumber: 'AP 16 AB 2102',
+    bikeColour: 'Pearl White',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: '97%',
+    mutualConnections: 14,
+    collegeDomain: 'waymate.app',
+    passwordHash: '5ff0e72de22ebf9e8cc9d5f3790aa4639a8c80d5e1e6b0fd6be4f7a66137fd40', // Waymate@1002
+    walletBalance: 126,
+    primaryRoutes: ['PVP SIT Parking → Central PG', 'Campus → Market']
+  },
+  {
+    id: 'user-demo-03',
+    generatedUserId: 'WM-1003',
+    username: 'rahul_verma',
+    name: 'Rahul Verma',
+    email: 'demo03@waymate.app',
+    phone: '9000000103',
+    collegeId: '23P81A0103',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Green Residency PG',
+    role: 'Passenger + Ride Requester + Lending Requester',
+    avatar: '/avatars/demo-user-03.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'New Member',
+    rating: 0,
+    reviewsCount: 0,
+    ridesCompleted: 2,
+    ridesShared: 0,
+    vehicle: 'No vehicle registered',
+    vehicleModel: '',
+    bikeNumber: '',
+    bikeColour: '',
+    fuelType: '',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: 'Not enough history',
+    mutualConnections: 6,
+    collegeDomain: 'waymate.app',
+    passwordHash: '7ec02462e5f8b7b711087a2553d78b62650a8f9fc76f0a6829a4bc5a7d9fe107', // Waymate@1003
+    walletBalance: 72,
+    primaryRoutes: ['PVP SIT Parking → Green Residency PG']
+  },
+  {
+    id: 'user-demo-04',
+    generatedUserId: 'WM-1004',
+    username: 'karthik_rao',
+    name: 'Karthik Rao',
+    email: 'demo04@waymate.app',
+    phone: '9000000104',
+    collegeId: '23P81A0104',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Green Residency PG',
+    role: 'Provider + Passenger',
+    avatar: '/avatars/demo-user-04.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Developing Trust',
+    rating: 4.7,
+    reviewsCount: 5,
+    ridesCompleted: 14,
+    ridesShared: 7,
+    vehicle: 'Honda Shine',
+    vehicleModel: 'Honda Shine',
+    bikeNumber: 'AP 16 AB 2104',
+    bikeColour: 'Gloss Black',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: '96%',
+    mutualConnections: 11,
+    collegeDomain: 'waymate.app',
+    passwordHash: '61a0f97a5b3a4a98442e9caae86a8ff39f57ebbf79ce2d6e3263e6e8bb24ad30', // Waymate@1004
+    walletBalance: 145,
+    primaryRoutes: ['PVP SIT Parking → Green Residency PG', 'Campus → Metro Station']
+  },
+  {
+    id: 'user-demo-05',
+    generatedUserId: 'WM-1005',
+    username: 'aditya_menon',
+    name: 'Aditya Menon',
+    email: 'demo05@waymate.app',
+    phone: '9000000105',
+    collegeId: '23P81A0105',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Central PG',
+    role: 'Passenger Account',
+    avatar: '/avatars/demo-user-05.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'New Member',
+    rating: 0,
+    reviewsCount: 0,
+    ridesCompleted: 1,
+    ridesShared: 0,
+    vehicle: 'No vehicle registered',
+    vehicleModel: '',
+    bikeNumber: '',
+    bikeColour: '',
+    fuelType: '',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: 'New member',
+    mutualConnections: 4,
+    collegeDomain: 'waymate.app',
+    passwordHash: '5677d2919d3ee6e52579da060d4732128e46bc9e36502e604f58c73ceb70ee53', // Waymate@1005
+    walletBalance: 68,
+    primaryRoutes: ['PVP SIT Parking → Central PG']
+  },
+  {
+    id: 'user-demo-06',
+    generatedUserId: 'WM-1006',
+    username: 'neha_reddy',
+    name: 'Neha Reddy',
+    email: 'demo06@waymate.app',
+    phone: '9000000106',
+    collegeId: '23P81A0106',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'North Hostel Block',
+    role: 'EV Provider + Passenger',
+    avatar: '/avatars/demo-user-06.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Trusted Member',
+    rating: 4.9,
+    reviewsCount: 8,
+    ridesCompleted: 21,
+    ridesShared: 11,
+    vehicle: 'Ather 450X',
+    vehicleModel: 'Ather 450X',
+    bikeNumber: 'AP 16 EV 2106',
+    bikeColour: 'Electric Blue',
+    fuelType: 'Electric',
+    isEv: true,
+    availableForLending: false,
+    reliabilityScore: '100% on-time',
+    mutualConnections: 16,
+    collegeDomain: 'waymate.app',
+    passwordHash: '9694665a3d7cb252a1b9134a49646b9aeb9f2a9694cbeea1cf8a6509f6e3c0ea', // Waymate@1006
+    walletBalance: 160,
+    primaryRoutes: ['PVP SIT Parking → North Hostel', 'Campus Food Street → North Hostel']
+  },
+  {
+    id: 'user-demo-07',
+    generatedUserId: 'WM-1007',
+    username: 'siddharth_das',
+    name: 'Siddharth Das',
+    email: 'demo07@waymate.app',
+    phone: '9000000107',
+    collegeId: '23P81A0107',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Green Residency PG',
+    role: 'Passenger Account',
+    avatar: '/avatars/demo-user-07.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'New Member',
+    rating: 0,
+    reviewsCount: 0,
+    ridesCompleted: 1,
+    ridesShared: 0,
+    vehicle: 'No vehicle registered',
+    vehicleModel: '',
+    bikeNumber: '',
+    bikeColour: '',
+    fuelType: '',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: 'New member',
+    mutualConnections: 3,
+    collegeDomain: 'waymate.app',
+    passwordHash: '6d123847aa3c65c40bcab3606fbf746b149bfe3a27cc996e57929d2fc35f79ee', // Waymate@1007
+    walletBalance: 50,
+    primaryRoutes: ['PVP SIT Parking → Green Residency PG']
+  },
+  {
+    id: 'user-demo-08',
+    generatedUserId: 'WM-1008',
+    username: 'varun_kumar',
+    name: 'Varun Kumar',
+    email: 'demo08@waymate.app',
+    phone: '9000000108',
+    collegeId: '23P81A0108',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Green Residency & Campus Circle',
+    role: 'Provider + Vehicle Lender',
+    avatar: '/avatars/demo-user-08.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Highly Trusted',
+    rating: 5.0,
+    reviewsCount: 9,
+    ridesCompleted: 31,
+    ridesShared: 19,
+    vehicle: 'Royal Enfield Hunter 350',
+    vehicleModel: 'Royal Enfield Hunter 350',
+    bikeNumber: 'AP 16 AB 2108',
+    bikeColour: 'Graphite Grey',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: true,
+    reliabilityScore: '99%',
+    mutualConnections: 21,
+    collegeDomain: 'waymate.app',
+    passwordHash: '438d438ba66526eb617d36a94f6cbf037ea4808381dd00fdfb8f2d5930263f35', // Waymate@1008
+    walletBalance: 210,
+    primaryRoutes: ['PVP SIT Parking → Green Residency PG', 'Campus → Central Library']
+  },
+  {
+    id: 'user-demo-09',
+    generatedUserId: 'WM-1009',
+    username: 'rohan_iyer',
+    name: 'Rohan Iyer',
+    email: 'demo09@waymate.app',
+    phone: '9000000109',
+    collegeId: '23P81A0109',
+    college: 'PVP Siddhartha Institute of Technology',
+    community: 'PVP Siddhartha Institute of Technology',
+    pgArea: 'Campus & Market Circle',
+    role: 'Passenger + Occasional Provider',
+    avatar: '/avatars/demo-user-09.jpg',
+    isVerified: true,
+    verificationStatus: 'VERIFIED',
+    verificationStep: 'VERIFIED',
+    trustLevel: 'Developing Trust',
+    rating: 4.6,
+    reviewsCount: 4,
+    ridesCompleted: 9,
+    ridesShared: 3,
+    vehicle: 'TVS Ntorq',
+    vehicleModel: 'TVS Ntorq',
+    bikeNumber: 'AP 16 AB 2109',
+    bikeColour: 'Sport Red',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: false,
+    reliabilityScore: '94%',
+    mutualConnections: 9,
+    collegeDomain: 'waymate.app',
+    passwordHash: '4a2cb3e84f95e86e8afa1583575359646971281891e0bf3eac9c0beeb917edd8', // Waymate@1009
+    walletBalance: 91,
+    primaryRoutes: ['Campus → Market', 'PVP SIT Parking → North Hostel']
+  }
+];
+
+export const INITIAL_USER = INITIAL_USERS[0];
+
+// Connected vehicles table (only Users 1, 2, 4, 6, 8, 9)
+export const INITIAL_VEHICLES = [
+  {
+    id: 'veh-demo-01',
+    ownerId: 'user-demo-01',
+    vehicleType: 'Two Wheeler',
+    brand: 'Honda',
+    model: 'Activa 6G',
+    registrationNumber: 'AP 16 AB 2101',
+    vehicleColour: 'Matte Black',
+    fuelType: 'Petrol',
+    isEv: false,
+    seats: 2,
+    availableForLending: false,
+    isAvailable: true
+  },
+  {
+    id: 'veh-demo-02',
+    ownerId: 'user-demo-02',
+    vehicleType: 'Two Wheeler',
+    brand: 'TVS',
+    model: 'Jupiter',
+    registrationNumber: 'AP 16 AB 2102',
+    vehicleColour: 'Pearl White',
+    fuelType: 'Petrol',
+    isEv: false,
+    seats: 1,
+    availableForLending: false,
+    isAvailable: true
+  },
+  {
+    id: 'veh-demo-04',
+    ownerId: 'user-demo-04',
+    vehicleType: 'Motorcycle',
+    brand: 'Honda',
+    model: 'Shine',
+    registrationNumber: 'AP 16 AB 2104',
+    vehicleColour: 'Gloss Black',
+    fuelType: 'Petrol',
+    isEv: false,
+    seats: 1,
+    availableForLending: false,
+    isAvailable: true
+  },
+  {
+    id: 'veh-demo-06',
+    ownerId: 'user-demo-06',
+    vehicleType: 'Electric Scooter',
+    brand: 'Ather',
+    model: '450X',
+    registrationNumber: 'AP 16 EV 2106',
+    vehicleColour: 'Electric Blue',
+    fuelType: 'Electric',
+    isEv: true,
+    seats: 2,
+    availableForLending: false,
+    isAvailable: true
+  },
+  {
+    id: 'veh-demo-08',
+    ownerId: 'user-demo-08',
+    vehicleType: 'Motorcycle',
+    brand: 'Royal Enfield',
+    model: 'Hunter 350',
+    registrationNumber: 'AP 16 AB 2108',
+    vehicleColour: 'Graphite Grey',
+    fuelType: 'Petrol',
+    isEv: false,
+    seats: 2,
+    availableForLending: true,
+    isAvailable: true
+  },
+  {
+    id: 'veh-demo-09',
+    ownerId: 'user-demo-09',
+    vehicleType: 'Two Wheeler',
+    brand: 'TVS',
+    model: 'Ntorq',
+    registrationNumber: 'AP 16 AB 2109',
+    vehicleColour: 'Sport Red',
+    fuelType: 'Petrol',
+    isEv: false,
+    seats: 1,
+    availableForLending: false,
+    isAvailable: true
+  }
+];
+
+// Seeded active & past rides connecting users and vehicles
+// Clean, distinct rides with no duplicates
+export const INITIAL_RIDES = [
+  {
+    id: 'ride-demo-01',
+    providerId: 'user-demo-01',
+    provider: INITIAL_USERS[0],
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    departureTime: '5:35 PM',
+    seatsTotal: 2,
+    seatsAvailable: 2,
+    distanceKm: 4.2,
+    contribution: 14,
+    vehicle: 'Honda Activa 6G',
+    vehicleColour: 'Matte Black',
+    isEv: false,
+    fuelType: 'Petrol',
+    note: 'Leaving right after lab ends. Have a sanitized spare helmet for pillion rider.',
+    status: 'ACTIVE',
+    requestsCount: 2,
+    createdAt: Date.now() - 3600000
+  },
+  {
+    id: 'ride-demo-02',
+    providerId: 'user-demo-02',
+    provider: INITIAL_USERS[1],
+    from: 'PVP SIT Parking',
+    to: 'Central PG',
+    date: 'Today',
+    departureTime: '5:45 PM',
+    seatsTotal: 1,
+    seatsAvailable: 0, // Booked by User 5 (Aditya Menon)
+    distanceKm: 3.8,
+    contribution: 12,
+    vehicle: 'TVS Jupiter',
+    vehicleColour: 'Pearl White',
+    isEv: false,
+    fuelType: 'Petrol',
+    note: 'Quick ride stopping near Food Street if you need a drop along the way.',
+    status: 'ACTIVE',
+    requestsCount: 1,
+    createdAt: Date.now() - 7200000
+  },
+  {
+    id: 'ride-demo-03',
+    providerId: 'user-demo-04',
+    provider: INITIAL_USERS[3],
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    departureTime: '6:00 PM',
+    seatsTotal: 1,
+    seatsAvailable: 0, // Booked by User 7 (Siddharth Das)
+    distanceKm: 4.2,
+    contribution: 14,
+    vehicle: 'Honda Shine',
+    vehicleColour: 'Gloss Black',
+    isEv: false,
+    fuelType: 'Petrol',
+    note: 'Direct commute to Green Residency. Relaxed and safe speed.',
+    status: 'ACTIVE',
+    requestsCount: 2,
+    createdAt: Date.now() - 10800000
+  },
+  {
+    id: 'ride-demo-04',
+    providerId: 'user-demo-06',
+    provider: INITIAL_USERS[5],
+    from: 'PVP SIT Parking',
+    to: 'North Hostel',
+    date: 'Today',
+    departureTime: '5:50 PM',
+    seatsTotal: 2,
+    seatsAvailable: 1, // 1 seat reserved by User 9 (Rohan Iyer)
+    distanceKm: 5.0,
+    contribution: 16,
+    vehicle: 'Ather 450X',
+    vehicleColour: 'Electric Blue',
+    isEv: true,
+    fuelType: 'Electric',
+    note: 'Silent electric commute to North Hostel gate. Spare helmet available.',
+    status: 'ACTIVE',
+    requestsCount: 1,
+    createdAt: Date.now() - 14400000
+  },
+  {
+    id: 'ride-demo-05',
+    providerId: 'user-demo-08',
+    provider: INITIAL_USERS[7],
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    departureTime: '6:10 PM',
+    seatsTotal: 2,
+    seatsAvailable: 2,
+    distanceKm: 4.2,
+    contribution: 14,
+    vehicle: 'Royal Enfield Hunter 350',
+    vehicleColour: 'Graphite Grey',
+    isEv: false,
+    fuelType: 'Petrol',
+    note: 'Heading via Ring Road. Comfortable pillion seat and spare helmet.',
+    status: 'ACTIVE',
+    requestsCount: 2,
+    createdAt: Date.now() - 18000000
+  },
+  {
+    id: 'ride-demo-06',
+    providerId: 'user-demo-09',
+    provider: INITIAL_USERS[8],
+    from: 'Campus',
+    to: 'Market',
+    date: 'Today',
+    departureTime: '6:20 PM',
+    seatsTotal: 1,
+    seatsAvailable: 1,
+    distanceKm: 3.5,
+    contribution: 12,
+    vehicle: 'TVS Ntorq',
+    vehicleColour: 'Sport Red',
+    isEv: false,
+    fuelType: 'Petrol',
+    note: 'Evening supply and snack run to market. Returning in 45 mins.',
+    status: 'ACTIVE',
+    requestsCount: 1,
+    createdAt: Date.now() - 21600000
+  }
+];
+
+// Connected bookings table
+export const INITIAL_BOOKINGS = [
+  {
+    id: 'book-demo-02',
+    userId: 'user-demo-05', // Passenger: Aditya Menon
+    rideId: 'ride-demo-02', // Driver: Priya Nair
+    providerId: 'user-demo-02',
+    type: 'PASSENGER',
+    from: 'PVP SIT Parking',
+    to: 'Central PG',
+    date: 'Today',
+    time: '5:45 PM',
+    partnerName: 'Priya Nair',
+    partnerAvatar: '/avatars/demo-user-02.jpg',
+    partnerRole: 'Provider',
+    vehicle: 'TVS Jupiter',
+    seatsBooked: 1,
+    contribution: 12,
+    status: 'UPCOMING',
+    createdAt: Date.now() - 3600000
+  },
+  {
+    id: 'book-demo-03',
+    userId: 'user-demo-07', // Passenger: Siddharth Das
+    rideId: 'ride-demo-03', // Driver: Karthik Rao
+    providerId: 'user-demo-04',
+    type: 'PASSENGER',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    time: '6:00 PM',
+    partnerName: 'Karthik Rao',
+    partnerAvatar: '/avatars/demo-user-04.jpg',
+    partnerRole: 'Provider',
+    vehicle: 'Honda Shine',
+    seatsBooked: 1,
+    contribution: 14,
+    status: 'UPCOMING',
+    createdAt: Date.now() - 4800000
+  },
+  {
+    id: 'book-demo-04',
+    userId: 'user-demo-09', // Passenger: Rohan Iyer
+    rideId: 'ride-demo-04', // Driver: Neha Reddy
+    providerId: 'user-demo-06',
+    type: 'PASSENGER',
+    from: 'PVP SIT Parking',
+    to: 'North Hostel',
+    date: 'Today',
+    time: '5:50 PM',
+    partnerName: 'Neha Reddy',
+    partnerAvatar: '/avatars/demo-user-06.jpg',
+    partnerRole: 'Provider',
+    vehicle: 'Ather 450X',
+    seatsBooked: 1,
+    contribution: 16,
+    status: 'UPCOMING',
+    createdAt: Date.now() - 5400000
+  },
+  {
+    id: 'book-demo-05',
+    userId: 'user-demo-01', // Driver ledger entry for Arjun Mehta
+    rideId: 'ride-demo-01',
+    providerId: 'user-demo-01',
+    type: 'PROVIDER',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    time: '5:35 PM',
+    partnerName: 'Community Members',
+    partnerAvatar: '/avatars/demo-user-03.jpg',
+    partnerRole: 'Passengers',
+    vehicle: 'Honda Activa 6G',
+    seatsBooked: 2,
+    contribution: 14,
+    status: 'OFFERED',
+    createdAt: Date.now() - 3600000
+  },
+  {
+    id: 'book-demo-06',
+    userId: 'user-demo-08', // Driver ledger entry for Varun Kumar
+    rideId: 'ride-demo-05',
+    providerId: 'user-demo-08',
+    type: 'PROVIDER',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    time: '6:10 PM',
+    partnerName: 'Community Members',
+    partnerAvatar: '/avatars/demo-user-01.jpg',
+    partnerRole: 'Passengers',
+    vehicle: 'Royal Enfield Hunter 350',
+    seatsBooked: 2,
+    contribution: 14,
+    status: 'OFFERED',
+    createdAt: Date.now() - 7200000
+  },
+  {
+    id: 'book-demo-07',
+    userId: 'user-demo-01', // Past completed trip for Arjun Mehta
+    rideId: 'ride-demo-05',
+    providerId: 'user-demo-08',
+    type: 'PASSENGER',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: '2 days ago',
+    time: '5:40 PM',
+    partnerName: 'Varun Kumar',
+    partnerAvatar: '/avatars/demo-user-08.jpg',
+    partnerRole: 'Provider',
+    vehicle: 'Royal Enfield Hunter 350',
+    seatsBooked: 1,
+    contribution: 14,
+    status: 'COMPLETED',
+    createdAt: Date.now() - 172800000
+  }
+];
+
+// Connected ride requests influencing Smart Demand
+export const INITIAL_RIDE_REQUESTS = [
+  {
+    id: 'req-demo-01',
+    requesterId: 'user-demo-03',
+    requesterName: 'Rahul Verma',
+    requesterAvatar: '/avatars/demo-user-03.jpg',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    time: '5:30 PM',
+    status: 'MATCHED',
+    matchedRideId: 'ride-demo-01'
+  },
+  {
+    id: 'req-demo-02',
+    requesterId: 'user-demo-05',
+    requesterName: 'Aditya Menon',
+    requesterAvatar: '/avatars/demo-user-05.jpg',
+    from: 'PVP SIT Parking',
+    to: 'Central PG',
+    date: 'Today',
+    time: '5:40 PM',
+    status: 'MATCHED',
+    matchedRideId: 'ride-demo-02'
+  },
+  {
+    id: 'req-demo-03',
+    requesterId: 'user-demo-07',
+    requesterName: 'Siddharth Das',
+    requesterAvatar: '/avatars/demo-user-07.jpg',
+    from: 'PVP SIT Parking',
+    to: 'Green Residency PG',
+    date: 'Today',
+    time: '6:00 PM',
+    status: 'MATCHED',
+    matchedRideId: 'ride-demo-03'
+  },
+  {
+    id: 'req-demo-04',
+    requesterId: 'user-demo-09',
+    requesterName: 'Rohan Iyer',
+    requesterAvatar: '/avatars/demo-user-09.jpg',
+    from: 'PVP SIT Parking',
+    to: 'North Hostel',
+    date: 'Today',
+    time: '5:45 PM',
+    status: 'MATCHED',
+    matchedRideId: 'ride-demo-04'
+  }
+];
+
+// Seeded reviews with realistic campus feedback
+export const INITIAL_REVIEWS = [
+  {
+    id: 'rev-01',
+    reviewerId: 'user-demo-03',
+    reviewerName: 'Rahul Verma',
+    reviewerAvatar: '/avatars/demo-user-03.jpg',
+    targetUserId: 'user-demo-01',
+    targetUserName: 'Arjun Mehta',
+    rating: 5,
+    comment: 'Punctual and very smooth ride on Activa. Provided a sanitized spare helmet.',
+    route: 'PVP SIT Parking → Green Residency PG',
+    createdAt: Date.now() - 86400000
+  },
+  {
+    id: 'rev-02',
+    reviewerId: 'user-demo-05',
+    reviewerName: 'Aditya Menon',
+    reviewerAvatar: '/avatars/demo-user-05.jpg',
+    targetUserId: 'user-demo-02',
+    targetUserName: 'Priya Nair',
+    rating: 5,
+    comment: 'Very safe driving and dropped me right opposite the Food Street junction.',
+    route: 'PVP SIT Parking → Central PG',
+    createdAt: Date.now() - 172800000
+  },
+  {
+    id: 'rev-03',
+    reviewerId: 'user-demo-07',
+    reviewerName: 'Siddharth Das',
+    reviewerAvatar: '/avatars/demo-user-07.jpg',
+    targetUserId: 'user-demo-04',
+    targetUserName: 'Karthik Rao',
+    rating: 5,
+    comment: 'Comfortable commute on the Honda Shine. Very friendly and punctual.',
+    route: 'PVP SIT Parking → Green Residency PG',
+    createdAt: Date.now() - 259200000
+  },
+  {
+    id: 'rev-04',
+    reviewerId: 'user-demo-09',
+    reviewerName: 'Rohan Iyer',
+    reviewerAvatar: '/avatars/demo-user-09.jpg',
+    targetUserId: 'user-demo-06',
+    targetUserName: 'Neha Reddy',
+    rating: 5,
+    comment: 'Super quiet and smooth ride on the Ather 450X. Always on time for hostel return.',
+    route: 'PVP SIT Parking → North Hostel',
+    createdAt: Date.now() - 345600000
+  },
+  {
+    id: 'rev-05',
+    reviewerId: 'user-demo-01',
+    reviewerName: 'Arjun Mehta',
+    reviewerAvatar: '/avatars/demo-user-01.jpg',
+    targetUserId: 'user-demo-08',
+    targetUserName: 'Varun Kumar',
+    rating: 5,
+    comment: 'Hunter 350 was maintained in mint condition. Smooth lending process with clear handoff.',
+    route: 'Vehicle Lending Circle (Hunter 350)',
+    createdAt: Date.now() - 432000000
+  },
+  {
+    id: 'rev-06',
+    reviewerId: 'user-demo-02',
+    reviewerName: 'Priya Nair',
+    reviewerAvatar: '/avatars/demo-user-02.jpg',
+    targetUserId: 'user-demo-01',
+    targetUserName: 'Arjun Mehta',
+    rating: 5,
+    comment: 'Reliable daily commute partner. Shared route seamlessly for a month.',
+    route: 'Campus → Central PG Corridor',
+    createdAt: Date.now() - 518400000
+  },
+  {
+    id: 'rev-07',
+    reviewerId: 'user-demo-06',
+    reviewerName: 'Neha Reddy',
+    reviewerAvatar: '/avatars/demo-user-06.jpg',
+    targetUserId: 'user-demo-08',
+    targetUserName: 'Varun Kumar',
+    rating: 5,
+    comment: 'Varun is an extremely responsible driver and lender in the community circle.',
+    route: 'PVP SIT Parking → Green Residency PG',
+    createdAt: Date.now() - 604800000
+  },
+  {
+    id: 'rev-08',
+    reviewerId: 'user-demo-04',
+    reviewerName: 'Karthik Rao',
+    reviewerAvatar: '/avatars/demo-user-04.jpg',
+    targetUserId: 'user-demo-09',
+    targetUserName: 'Rohan Iyer',
+    rating: 5,
+    comment: 'Great passenger and punctual pickup at campus gate.',
+    route: 'Campus → Market Circle',
+    createdAt: Date.now() - 691200000
+  }
+];
+
+// Connected vehicle lending table
+export const INITIAL_LENDING = [
+  {
+    id: 'lend-demo-01',
+    vehicleId: 'veh-demo-08',
+    ownerId: 'user-demo-08', // Owner: Varun Kumar
+    ownerName: 'Varun Kumar',
+    ownerAvatar: '/avatars/demo-user-08.jpg',
+    isVerified: true,
+    rating: 5.0,
+    vehicle: 'Royal Enfield Hunter 350',
+    vehicleColour: 'Graphite Grey',
+    bikeNumber: 'AP 16 AB 2108',
+    fuelType: 'Petrol',
+    isEv: false,
+    availableForLending: true,
+    status: 'REQUESTED',
+    requesterId: 'user-demo-03', // Requester: Rahul Verma
+    requesterName: 'Rahul Verma',
+    requesterAvatar: '/avatars/demo-user-03.jpg',
+    requesterTrustLevel: 'New Member',
+    requesterRating: 0,
+    requesterReviewsCount: 0,
+    requesterRidesCompleted: 2,
+    requesterCollege: 'PVP Siddhartha Institute of Technology',
+    requesterCommunity: 'PVP Siddhartha Institute of Technology',
+    borrowPurpose: 'College project supply pickup in city center',
+    startTime: '6:00 PM',
+    endTime: '9:00 PM',
+    location: 'Green Residency PG Parking',
+    costCredits: 24,
+    notes: 'Well maintained, full tank of fuel. Helmet provided in top box. Return with same fuel level.',
+    updatedAt: Date.now() - 3600000
+  },
+  {
+    id: 'lend-demo-02',
+    vehicleId: 'veh-demo-06',
+    ownerId: 'user-demo-06',
+    ownerName: 'Neha Reddy',
+    ownerAvatar: '/avatars/demo-user-06.jpg',
+    isVerified: true,
+    rating: 4.9,
+    vehicle: 'Ather 450X',
+    vehicleColour: 'Electric Blue',
+    bikeNumber: 'AP 16 EV 2106',
+    fuelType: 'Electric',
+    isEv: true,
+    availableForLending: false,
+    status: 'AVAILABLE',
+    requesterId: null,
+    requesterName: null,
+    borrowPurpose: null,
+    startTime: 'Available on weekend',
+    endTime: 'After lab hours',
+    location: 'North Hostel Gate',
+    costCredits: 20,
+    notes: 'Fully charged EV. Fast charging cable included under the seat.',
+    updatedAt: Date.now() - 7200000
+  }
+];
+
+// Per-User Initial Wallets matching exact specifications
+export const INITIAL_WALLETS = {
+  'user-demo-01': {
+    balance: 184,
+    thisMonthEarned: 58,
+    thisMonthUsed: 28,
+    transactions: [
+      {
+        id: 'tx-01-01',
+        type: 'EARNED',
+        amount: 14,
+        description: 'Ride completion with Rahul Verma (PVP SIT Parking → Green Residency PG)',
+        date: 'Today · 5:35 PM',
+        rideId: 'ride-demo-01',
+        timestamp: Date.now() - 3600000
+      },
+      {
+        id: 'tx-01-02',
+        type: 'USED',
+        amount: 14,
+        description: 'Ride booked with Varun Kumar (Campus → PG)',
+        date: '2 days ago · 5:40 PM',
+        rideId: 'ride-demo-05',
+        timestamp: Date.now() - 172800000
+      },
+      {
+        id: 'tx-01-03',
+        type: 'EARNED',
+        amount: 16,
+        description: 'Shared ride drop to Green Residency corridor',
+        date: '3 days ago · 6:15 PM',
+        rideId: 'ride-demo-06',
+        timestamp: Date.now() - 259200000
+      },
+      {
+        id: 'tx-01-04',
+        type: 'EARNED',
+        amount: 28,
+        description: 'Shared 2 seats to Central Library Corridor',
+        date: '5 days ago · 9:15 AM',
+        timestamp: Date.now() - 432000000
+      }
+    ]
+  },
+  'user-demo-02': {
+    balance: 126,
+    thisMonthEarned: 45,
+    thisMonthUsed: 24,
+    transactions: [
+      {
+        id: 'tx-02-01',
+        type: 'EARNED',
+        amount: 15,
+        description: 'Ride completion with Aditya Menon (PVP SIT Parking → Central PG)',
+        date: 'Today · 5:45 PM',
+        rideId: 'ride-demo-02',
+        timestamp: Date.now() - 3600000
+      },
+      {
+        id: 'tx-02-02',
+        type: 'USED',
+        amount: 12,
+        description: 'Ride booked for campus grocery run',
+        date: 'Yesterday · 4:20 PM',
+        timestamp: Date.now() - 86400000
+      }
+    ]
+  },
+  'user-demo-03': {
+    balance: 72,
+    thisMonthEarned: 24,
+    thisMonthUsed: 20,
+    transactions: [
+      {
+        id: 'tx-03-02',
+        type: 'USED',
+        amount: 20,
+        description: 'Lending request security deposit (Hunter 350 to Varun Kumar)',
+        date: 'Today · 5:00 PM',
+        timestamp: Date.now() - 3600000
+      },
+      {
+        id: 'tx-03-03',
+        type: 'EARNED',
+        amount: 12,
+        description: 'Refund for cancelled morning commute',
+        date: '2 days ago',
+        timestamp: Date.now() - 172800000
+      }
+    ]
+  },
+  'user-demo-04': {
+    balance: 145,
+    thisMonthEarned: 52,
+    thisMonthUsed: 14,
+    transactions: [
+      {
+        id: 'tx-04-01',
+        type: 'EARNED',
+        amount: 13,
+        description: 'Shared ride with Siddharth Das (PVP SIT Parking → Green Residency)',
+        date: 'Today · 6:00 PM',
+        rideId: 'ride-demo-03',
+        timestamp: Date.now() - 1800000
+      },
+      {
+        id: 'tx-04-02',
+        type: 'USED',
+        amount: 14,
+        description: 'Ride booked from central library',
+        date: '3 days ago',
+        timestamp: Date.now() - 259200000
+      }
+    ]
+  },
+  'user-demo-05': {
+    balance: 68,
+    thisMonthEarned: 10,
+    thisMonthUsed: 12,
+    transactions: [
+      {
+        id: 'tx-05-01',
+        type: 'USED',
+        amount: 12,
+        description: 'Ride booked with Priya Nair (PVP SIT Parking → Central PG)',
+        date: 'Today · 5:45 PM',
+        rideId: 'ride-demo-02',
+        timestamp: Date.now() - 3600000
+      }
+    ]
+  },
+  'user-demo-06': {
+    balance: 160,
+    thisMonthEarned: 48,
+    thisMonthUsed: 14,
+    transactions: [
+      {
+        id: 'tx-06-01',
+        type: 'EARNED',
+        amount: 16,
+        description: 'Shared ride on Ather 450X to North Hostel',
+        date: 'Today · 5:50 PM',
+        rideId: 'ride-demo-04',
+        timestamp: Date.now() - 2400000
+      },
+      {
+        id: 'tx-06-02',
+        type: 'USED',
+        amount: 14,
+        description: 'Ride booked for morning lab',
+        date: '2 days ago',
+        timestamp: Date.now() - 172800000
+      }
+    ]
+  },
+  'user-demo-07': {
+    balance: 50,
+    thisMonthEarned: 20,
+    thisMonthUsed: 14,
+    transactions: [
+      {
+        id: 'tx-07-01',
+        type: 'USED',
+        amount: 14,
+        description: 'Ride booked with Karthik Rao (PVP SIT Parking → Green Residency PG)',
+        date: 'Today · 6:00 PM',
+        rideId: 'ride-demo-03',
+        timestamp: Date.now() - 4800000
+      }
+    ]
+  },
+  'user-demo-08': {
+    balance: 210,
+    thisMonthEarned: 74,
+    thisMonthUsed: 15,
+    transactions: [
+      {
+        id: 'tx-08-01',
+        type: 'EARNED',
+        amount: 20,
+        description: 'Shared ride to Green Residency PG',
+        date: 'Today · 6:10 PM',
+        rideId: 'ride-demo-05',
+        timestamp: Date.now() - 1800000
+      },
+      {
+        id: 'tx-08-02',
+        type: 'EARNED',
+        amount: 24,
+        description: 'Vehicle lending contribution for Hunter 350',
+        date: 'Yesterday · 7:30 PM',
+        timestamp: Date.now() - 86400000
+      },
+      {
+        id: 'tx-08-03',
+        type: 'USED',
+        amount: 15,
+        description: 'Ride booked for late night return',
+        date: '3 days ago',
+        timestamp: Date.now() - 259200000
+      }
+    ]
+  },
+  'user-demo-09': {
+    balance: 91,
+    thisMonthEarned: 28,
+    thisMonthUsed: 15,
+    transactions: [
+      {
+        id: 'tx-09-01',
+        type: 'EARNED',
+        amount: 12,
+        description: 'Shared ride to Market with TVS Ntorq',
+        date: 'Today · 6:20 PM',
+        rideId: 'ride-demo-06',
+        timestamp: Date.now() - 21600000
+      },
+      {
+        id: 'tx-09-02',
+        type: 'USED',
+        amount: 15,
+        description: 'Ride booked with Neha Reddy to North Hostel',
+        date: 'Today · 5:50 PM',
+        rideId: 'ride-demo-04',
+        timestamp: Date.now() - 5400000
+      }
+    ]
+  }
+};
+
+export const INITIAL_WALLET = INITIAL_WALLETS['user-demo-01'];
+
+// Seeded realistic real-time notifications (Sections 25-35)
+export const INITIAL_NOTIFICATIONS = [
+  {
+    id: 'notif-01',
+    recipientId: 'user-demo-01', // To: Arjun Mehta
+    senderId: 'user-demo-04',    // From: Karthik Rao
+    senderName: 'Karthik Rao',
+    senderAvatar: '/avatars/demo-user-04.jpg',
+    senderTrustLevel: 'Developing Trust',
+    senderRating: 4.7,
+    type: 'RIDE_BOOKED',
+    title: '🔔 New ride request',
+    message: 'Karthik Rao requested a seat on your journey. PVP SIT Parking → Green Residency PG · 5:35 PM',
+    bookingId: 'book-demo-03',
+    rideId: 'ride-demo-01',
+    is_read: false,
+    createdAt: Date.now() - 2400000
+  },
+  {
+    id: 'notif-02',
+    recipientId: 'user-demo-08', // To: Varun Kumar
+    senderId: 'user-demo-03',    // From: Rahul Verma
+    senderName: 'Rahul Verma',
+    senderAvatar: '/avatars/demo-user-03.jpg',
+    senderTrustLevel: 'New Member',
+    senderRating: 0,
+    type: 'LENDING_REQUEST',
+    title: '🔑 Vehicle lending request',
+    message: 'Rahul Verma wants to borrow your Royal Enfield Hunter 350. 6:00 PM – 9:00 PM',
+    bike_request_id: 'lend-demo-01',
+    is_read: false,
+    createdAt: Date.now() - 3600000
+  },
+  {
+    id: 'notif-03',
+    recipientId: 'user-demo-07', // To: Siddharth Das
+    senderId: 'user-demo-04',    // From: Karthik Rao
+    senderName: 'Karthik Rao',
+    senderAvatar: '/avatars/demo-user-04.jpg',
+    senderTrustLevel: 'Developing Trust',
+    senderRating: 4.7,
+    type: 'RIDE_CONFIRMED',
+    title: '✓ Ride confirmed',
+    message: 'Karthik Rao confirmed your seat. PVP SIT Parking → Green Residency PG · 6:00 PM. Your 14-credit contribution has been recorded.',
+    bookingId: 'book-demo-03',
+    rideId: 'ride-demo-03',
+    is_read: true,
+    createdAt: Date.now() - 1800000
+  }
+];
+
+// Seeded campus events
+export const INITIAL_EVENTS = [
+  {
+    id: 'event-hackathon',
+    title: 'PVP SIT HACKATHON 2026',
+    date: 'Tomorrow',
+    time: '9:00 AM',
+    location: 'Main Block / Innovation Hall',
+    demand: 'High',
+    expectedDemand: 28,
+    attendees: 120,
+    corridor: 'PVP SIT Parking → Green Residency PG'
+  },
+  {
+    id: 'event-freshers',
+    title: 'Freshers Welcome Day',
+    date: 'Friday',
+    time: '10:00 AM',
+    location: 'Main Auditorium',
+    demand: 'High',
+    expectedDemand: 35,
+    attendees: 140,
+    corridor: 'PVP SIT Parking → Central PG'
+  },
+  {
+    id: 'event-techfest',
+    title: 'Tech Fest 2026',
+    date: 'Sep 25',
+    time: '2:00 PM',
+    location: 'Campus Grounds',
+    demand: 'Moderate',
+    expectedDemand: 16,
+    attendees: 200,
+    corridor: 'Campus → Market'
+  }
+];
+
+export const BASE_PLATFORM_STATS = {
+  sharedRides: 142,
+  members: 9,
+  carbonSaved: 14.8,
+  todayBooked: 3,
+  todayOffered: 5,
+  activeRequests: 4
+};
