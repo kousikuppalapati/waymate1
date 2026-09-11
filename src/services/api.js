@@ -3,7 +3,10 @@
 const SESSION_KEY = 'waymate_session_v2';
 const CACHE_KEY = 'waymate_api_cache_v2';
 const OFFLINE_KEY = 'waymate_simulated_offline';
-const API_BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/$/, '');
+const API_BASE = (
+  import.meta.env.VITE_API_BASE_URL ||
+  'https://waymate1.onrender.com/api'
+).replace(/\/$/, '');
 const activeMutations = new Set();
 
 const emptyDb = { user:null, users:[], vehicles:[], rides:[], bookings:[], rideRequests:[], reviews:[], lending:[], notifications:[], events:[], wallet:{balance:0,thisMonthEarned:0,thisMonthUsed:0,transactions:[]}, platformStats:{sharedRides:0,members:0,carbonSaved:0,todayBooked:0,todayOffered:0,activeRequests:0} };
